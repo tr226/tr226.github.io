@@ -1,0 +1,205 @@
+:root{
+--black-color:#22222e;
+--b-color:#575859;
+--text-color:#8d8d8d;
+--white-color:#fff;
+
+
+--header-height:80px;
+}
+*{
+    box-sizing: initial;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+p{
+    font-size: 1.6rem;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width:100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* places */
+.grid_row__place-2-4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -48px;
+    
+}
+.grid__col-2-4{
+    padding-left: 9px;
+    padding-right: 9px;
+    width:18%;
+    height: 277px;
+}
+/* --------endow ----------- RECOMMEND DISCOVERY-----------*/
+.grid__row-3{
+    display: flex;
+    margin-left: -9px;
+    margin-right: -9px;
+    
+    
+}
+.grid__col-3{
+    padding-left: 9px;
+    padding-right: 9px;
+    width:33.3334%;
+  
+    
+
+}
+/* grid recommend */
+.grid__row__recommend-4{
+    display: flex;
+    margin-left: -9px;
+    margin-right: -9px;
+    
+    
+}
+.grid__col__recommend-4{
+    padding-left: 9px;
+    padding-right: 9px;
+    width:25%;
+}
+/*grid__connect */
+.grid__row-50{
+    display: flex;
+
+    margin-left: -8px;
+    margin-right: -8px;
+       
+}
+.grid__col-50{
+    padding-left: 8px;
+    padding-right: 8px;
+    width:50%;
+}
+.grid__col-50--2{
+    padding-left: 8px;
+    padding-right: 8px;
+    width:50%;
+}
+/* ================footer============== */
+.grid__row-footer-5{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    
+}
+.grid__col-footer-5{
+    padding-left: 10px;
+    padding-right: 10px;
+    width:20%;
+  
+    
+
+}
+/* calender */
+.grid-calender-1-2{
+    width:351px;
+    max-width:100%;
+    margin:0 auto;
+}
+.grid__row-calender{
+display: flex;
+margin: 2px 0 0 16px;
+}
+.grid__col-calender{
+    padding-left: 5px;
+    padding-right:5px;
+    width:9.5%;
+    height:38px;
+    cursor: pointer;
+}
+
+/* calender background */
+.background-white{
+    background-color: var(--white-color) !important;
+}
+.background-ago{
+    background-color: #f6f6f6 !important;
+    color:#919191 !important;
+}
+.curser__defaul{
+    cursor: default;
+}
+/* font */
+.label__hightlight{
+    font-size: 2.8rem;
+    margin-top: 44px;
+}
+.label-text{
+font-size: 1.6rem;
+color: #333;
+}
+/* btn */
+.btn-left{
+    background-color:#fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 1.5rem;;
+    color:var(--black-color);
+    box-shadow: 0 1px 2px 1px #333;
+
+}
+.btn-right{
+    background-color:#fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 1.5rem;;
+    color:var(--black-color);
+    box-shadow: 0 1px 2px 1px #333;
+}
+
+.contact__connect-home-png{
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+
+    
+}
+@keyframes growth{
+    from{
+        transform:translateY(-3px);
+    }
+    to{
+        transform:translateY(0);
+
+    }
+}

@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid header_wrap">
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <svg version="1.1" viewBox="0 0 50 50" class="header__logo-fill" style="width: 50px; height: 50px;">
+                            <path
+                                pid="0"
+                                d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                            ></path>
+                        </svg>
+                        
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-cover">
+
+                            <i class="header__search-icon ti-search"></i>
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm ">
+                        </div>
+                        <div class="header__search-selection">
+                            <div class="header__search-selection-date ">
+                                <i class="header__search-selection-icon-date far fa-calendar"></i>
+                                <span class="header__search-selection-label">Ngày</span>
+                                    <!-- calender -->
+                                <div class="header__date">
+
+                                    <div class="header__date-month-wrap">
+                                            <div class="header__date-calender-sep-in">
+                                                <div class="header__date-calender-sept-in-btn">
+                                                    <i class="btn_left ti-arrow-left"></i>
+                                                </div>
+
+                                                <h3 class="header__date-9">September 2021</h3>
+                                            </div>
+                                   
+                                            <div class="header__date-calender-oct-in">
+                                            <div class="header__date-calender-oct-in-btn">
+                                                <i class="btn_right ti-arrow-right"></i>
+                                            </div>
+                                            <h3 class="header__date-10">October 2021</h3>
+                                            </div>
+                                    </div>
+                                        
+                                 
+                                    <div class="grid__date-calender">
+                                        <div class="header__date-calender-sep-out">
+                                            
+                                            <div class="grid-calender-1-2">
+                                                <div class="grid__row-calender">
+                                                    <div class="month grid__col-calender curser__defaul">
+                                                       Mon
+                                                    </div>
+                                                    <div class="month grid__col-calender curser__defaul">
+                                                        Tue
+                                                     </div>
+                                                    
+                                                     <div class="month grid__col-calender curser__defaul">
+                                                         Wed
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                        Thu
+                                                     </div>
+                                                     <div class="month grid__col-calender curser__defaul">
+                                                         Fri
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                         Sat
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                        Sun
+                                                     </div>
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender background-white">
+                                                       
+                                                    </div>
+                                                    <div class="day grid__col-calender background-white">
+                                                        
+                                                     </div>
+                                                     <div class="day grid__col-calender background-ago">
+                                                        1
+                                                     </div>
+                                                     <div class="day grid__col-calender background-ago">
+                                                         2
+                                                      </div>
+                                                      <div class="day grid__col-calender background-today">
+                                                        3
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         4
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         5
+                                                      </div>     
+                                                                                          
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       6
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        7
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        8
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         9
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        10
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         11
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         12
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       13
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        14
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        15
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         16
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        17
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         18
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         19
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                   
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       20
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        21
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        22
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         23
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        24
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         25
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         26
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       27
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        28
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        29
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         30
+                                                      </div>
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            <div class="header_date-option-delete"><a href="#" class="header_date-option-delete-link">Xóa</a></div>
+                                            
+                                        </div>
+                                        <div class="header__date-calender-oct-out">
+                                           
+                                            <div class="grid-calender-1-2">
+                                                <div class="grid__row-calender">
+                                                    <div class="month grid__col-calender curser__defaul">
+                                                       Mon
+                                                    </div>
+                                                    <div class="month grid__col-calender curser__defaul">
+                                                        Tue
+                                                     </div>
+                                                    
+                                                     <div class="month grid__col-calender curser__defaul">
+                                                         Wed
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                        Thu
+                                                     </div>
+                                                     <div class="month grid__col-calender curser__defaul">
+                                                         Fri
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                         Sat
+                                                      </div>
+                                                      <div class="month grid__col-calender curser__defaul">
+                                                        Sun
+                                                     </div>
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender background-white">
+                                                       
+                                                    </div>
+                                                    <div class="day grid__col-calender background-white">
+                                                        
+                                                     </div>
+                                                     <div class="day grid__col-calender background-white">
+                                                        
+                                                     </div>
+                                                     <div class="day grid__col-calender background-white">
+                                                         
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        1
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         2
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         3
+                                                      </div>     
+                                                                                          
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       4
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        5
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        6
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         7
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        8
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         9
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         10
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       11
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        12
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        13
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         14
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        15
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         16
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         17
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                   
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       18
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        19
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        20
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         21
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        22
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         23
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                         24
+                                                      </div>                                             
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                <div class="grid__row-calender">
+                                                    <div class="day grid__col-calender">
+                                                       25
+                                                    </div>
+                                                    <div class="day grid__col-calender">
+                                                        26
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                        27
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         28
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        29
+                                                     </div>
+                                                     <div class="day grid__col-calender">
+                                                         30
+                                                      </div>
+                                                      <div class="day grid__col-calender">
+                                                        31
+                                                     </div>
+                                                     
+                                                     
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            <div class="header_date-option-apply">  <a href="#" class="header_date-option-apply-link">Áp dụng</a>  </div>
+                                        </div>
+                                     
+                                    </div>
+                              </div>     
+                            </div>
+                            
+                            <div class="header__search-selection-quantity">
+                                <i class="header__search-selection-icon-quantity far fa-calendar"></i>
+                                <span class="header__search-selection-label">Số khách</span>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="header__search-btn">
+                            <i class="header__search-btn-icon ti-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Guide</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link dot_notication">Host</a>
+                            <div class="header__navbar-item-notication">
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Đăng kí</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Đăng nhập</a>
+                        </li>  
+                    </ul>
+                    <a href="" class="header__navbar-language__link">
+                        <div class="header__navbar-language">
+                       
+                            <div class="header__navbar-language__flag-out">
+
+                                <i class="header__navbar-language__star fas fa-star"></i>
+                            </div>
+                             <span class="header__navbar-language-nation">VND</span> 
+                             <i class="header__navbar-language_down fas fa-sort-down"></i>
+                            
+                            </div>
+                    </a>
+                            
+                        
+                        
+                    
+                </div>
+                
+            </div>
+        </header>
+        <div class="contact">
+            <div class="grid">
+                <!-- -------------background------------- -->
+                <div class="contact_bakground" style="background-image: url(https://beta-api.luxstay.net/api/upload/file?storage=admins/12/90D5fOM9lCriVigTdM4ZxXjm.jpg);"></div>
+                <!-- ----------------welcome------------- -->
+                <div class="contact__welcome">
+                    <h2 class="contact__welcome-label">Chào mừng đến với Luxstay!</h2>
+                    <div class="contact__welcome-info">Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay</div>
+                    <div class="contact__welcome-member"><a href="#" class="contact__welcome-member-login">Đăng nhập</a> hoặc <a href="#" class="contact__welcome-member-register"> Đăng ký</a> để trải nghiệm !</div>
+                </div>
+                <!-- ----------------places------------- -->
+                <div class="contact__places">
+                    <h2 class="label__hightlight">Địa điểm nổi bật</h2>
+                    <span class="label-text">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+                    <div class="contact__places-img-list">
+                        <div class="btn-left contact__places__local-left"><i class="  fas fa-chevron-left"></i></div>
+                        <div class="btn-right contact__places__local-right"><i class="fas fa-chevron-right"></i></div>
+                        
+                        <div class="grid_row__place-2-4">
+                            <div class="grid__col-2-4">
+                                <a href="" class="contact__places-img-link">
+
+                                    <div class="contact__places-img-item" style="background-image: url(./assets/img/hn.png);">
+                                        
+                                        <div class="contact__places-name-wrapper">
+                                            <h2 class="contact__places-img-item-name">Hà Nội</h2>
+                                        <p class="contact__places-img-item-slot" >2819 <span class="small"> Chỗ ở</span> </p>
+                                     </div>
+                                    </div>
+                                </a>
+                             
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="contact__places-img-link">
+                                
+                                <div class="contact__places-img-item" style="background-image: url(./assets/img/hcm.png);">
+                                    
+                                    <div class="contact__places-name-wrapper  ">
+                                        <h2 class="contact__places-img-item-name">TP.Hồ Chí Minh</h2>
+                                    <p class="contact__places-img-item-slot" >2291 <span class="small"> Chỗ ở</span> </p>
+                                 </div>
+                                </div>
+                             </a>   
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="contact__places-img-link">
+
+                                <div class="contact__places-img-item" style="background-image: url(./assets/img/vt.png);">
+                                    
+                                    <div class="contact__places-name-wrapper">
+                                        <h2 class="contact__places-img-item-name">Vũng Tàu</h2>
+                                    <p class="contact__places-img-item-slot" >542 <span class="small"> Chỗ ở</span> </p>
+                                 </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="contact__places-img-link">
+
+                                <div class="contact__places-img-item" style="background-image: url(./assets/img/dl.png);">
+                                    
+                                    <div class="contact__places-name-wrapper">
+                                        <h2 class="contact__places-img-item-name">Đà Lạt</h2>
+                                    <p class="contact__places-img-item-slot" >1482 <span class="small"> Chỗ ở</span> </p>
+                                 </div>
+                                </div>
+                             </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="contact__places-img-link">
+
+                                <div class="contact__places-img-item" style="background-image: url(./assets/img/dn.png);">
+                                    
+                                    <div class="contact__places-name-wrapper">
+                                        <h2 class="contact__places-img-item-name">Đà Nẵng</h2>
+                                    <p class="contact__places-img-item-slot" >819 <span class="small"> Chỗ ở</span> </p>
+                                 </div>
+                                </div>
+                             </a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <!-- ----------------endow------------- -->
+                <div class="contact__endow">
+                    <h2 class="label__hightlight">Ưu đãi độc quyền</h2>
+                    <p class="label-text">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
+                    <div class="contact__endow_list">
+                        <div class="grid__row-3">
+                            <div class="grid__col-3">
+                                <a href="" class="contact__endow_link">
+                                    <div class="contact__endow-item" >
+                                        <div class="contact__endow-img" style="background-image:url(./assets/img/endow_1.png);"></div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="grid__col-3">
+                                <a href="" class="contact__endow_link">
+                                    <div class="contact__endow-item" >
+                                        <div class="contact__endow-img" style="background-image:url(./assets/img/endow_2.pong.jpg);"></div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="grid__col-3">
+                                <a href="" class="contact__endow_link">
+                                    <div class="contact__endow-item" >
+                                        <div class="contact__endow-img" style="background-image:url(./assets/img/endow_3.png);"></div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ---------------RECOMMEND------------------ -->
+                <div class="contact__recomemnd">
+                    <h2 class="label__hightlight">Ưu đãi độc quyền</h2>
+                    <p class="label-text">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
+                    <div class="contact__recommend-list">
+                        <div class="btn-left contact__recomemnd__local-left"><i class="  fas fa-chevron-left"></i></div>
+                        <div class="btn-right contact__recomemnd__local-right"><i class="fas fa-chevron-right"></i></div>
+
+                        <div class="grid__row__recommend-4">                            
+                            <!-- item -->
+                            <div class="grid__col__recommend-4">
+                                <a href="#" class="contact__recommend-item-link">
+
+                                    <div class="contact__recommend-item">
+                                        <div class="contact__recommend-img" style="background-image:url(https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg);"></div>
+                                        <div class="contact__recommend-info">
+                                            <h3 class="contact__recommend-info-label-name">Vi vu ngoại thành Hà Nội</h3>
+                                            <span class="contact__recommend-info-more">Trải nghiệm không gian thoáng đãng <br> cho chuyến đi ngay gần Hà Nội</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                               <!-- item -->
+                               <div class="grid__col__recommend-4">
+                                <a href="#" class="contact__recommend-item-link">
+
+                                    <div class="contact__recommend-item">
+                                        <div class="contact__recommend-img" style="background-image:url(https://cdn.luxstay.com/home/apartment/apartment_2_1614588617.jpg);"></div>
+                                        <div class="contact__recommend-info">
+                                            <h3 class="contact__recommend-info-label-name">Vũng Tàu Biệt thự hồ bơi</h3>
+                                            <span class="contact__recommend-info-more">Những căn biệt thự có hồ bơi dành cho<br> kỳ nghỉ của bạn tại Vũng Tàu</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                               <!-- item -->
+                               <div class="grid__col__recommend-4">
+                                <a href="#" class="contact__recommend-item-link">
+
+                                    <div class="contact__recommend-item">
+                                        <div class="contact__recommend-img" style="background-image:url(https://cdn.luxstay.com/home/apartment/apartment_1_1614660728.jpg);"></div>
+                                        <div class="contact__recommend-info">
+                                            <h3 class="contact__recommend-info-label-name">Hà Nội nội thành lãng mạn</h3>
+                                            <span class="contact__recommend-info-more">Không gian lãng mạn dành cho cặp đôi<br> tại trung tâm Hà Nội</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                               <!-- item -->
+                               <div class="grid__col__recommend-4">
+                                <a href="#" class="contact__recommend-item-link">
+
+                                    <div class="contact__recommend-item">
+                                        <div class="contact__recommend-img" style="background-image:url(https://cdn.luxstay.com/home/apartment/apartment_2_1615794965.jpg);"></div>
+                                        <div class="contact__recommend-info">
+                                            <h3 class="contact__recommend-info-label-name">Sài Gòn cần là có ngay</h3>
+                                            <span class="contact__recommend-info-more">Những căn homestay có 01 phòng ngủ<br> tại Sài Gòn có thể đặt nhanh chóng</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------RECOMMEND DISCOVERY------------------ -->
+                <div class="contact__discovery">
+                    <h2 class="label__hightlight">Gợi ý khám phá</h2>
+                    <p class="label-text">Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên</p>
+                    <div class="contact__discovery-list">
+                        <div class="grid__row-3">
+                            <div class="contact__discovery_btn">
+                                <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
+                                <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__discovery-link">
+
+                                    <div class="contact__discovery-item">
+                                        <div class="contact__discovery-item-img" style="background-image: url(./assets/img/discovery1.jpg);"></div>
+                                        <div class="contact__discovery-item-info-more">Thông tin homestay</div>
+                                        <div class="contact__discovery-item-title">5 resort hạng sang ở Việt Nam xuất<br> hiện trên tạp chí du lịch Anh</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__discovery-link">
+
+                                    <div class="contact__discovery-item">
+                                        <div class="contact__discovery-item-img" style="background-image: url(./assets/img/discovery2.jpg);"></div>
+                                        <div class="contact__discovery-item-info-more">Thông tin homestay</div>
+                                        <div class="contact__discovery-item-title">Du lịch Cần Thơ nhất định phải ghé<br>  thăm những địa điểm này</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__discovery-link">
+
+                                    <div class="contact__discovery-item">
+                                        <div class="contact__discovery-item-img" style="background-image: url(./assets/img//discovery3pts.png);"></div>
+                                        <div class="contact__discovery-item-info-more">Thông tin homestay</div>
+                                        <div class="contact__discovery-item-title">Tuần lễ “Tôi yêu bánh mì Sài Gòn”<br> chính thức diễn ra từ ngày 24/3</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <!-- ---------------GUIDE------------------ -->
+                <div class="contact__guide">
+                    <h2 class="label__hightlight">Hướng dẫn sử dụng</h2>
+                    <p class="label-text">Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng</p>
+                    <div class="contact__guide-list">
+                        <div class="grid__row-3">
+                            <div class="contact__guide_btn">
+                                <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
+                                <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__guide-link">
+
+                                    <div class="contact__guide-item">
+                                        <div class="contact__guide-item-img" style="background-image: url(./assets/img/hdsd1.jpg);"></div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__guide-link">
+
+                                    <div class="contact__guide-item">
+                                        <div class="contact__guide-item-img" style="background-image: url(./assets/img/hdsd2.jpg);"></div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-3">
+                                <!-- item -->
+                                <a href="#" class="contact__guide-link">
+
+                                    <div class="contact__guide-item">
+                                        <div class="contact__guide-item-img" style="background-image: url(./assets/img/hdsd3.jpg);"></div>
+
+                                    </div>
+                                </a>
+                            </div>
+                           
+                           
+                     
+                        
+                        
+                    </div>
+                </div>
+            
+                </div>
+                <!-- ---------------CONECT------------------ -->
+                <div class="contact__connect">
+                    <div class="grid__row-50">
+                        <div class="grid__col-50">
+                            <svg version="1.1" viewBox="0 0 244 50" class="contact_connect-logo">
+                                <path
+                                    pid="0"
+                                    d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z"
+                                ></path>
+                            </svg>
+                            <h1 class="contact__connect-label">TÌM KIẾM CHỖ Ở GIÁ TỐT NHẤT</h1>
+                            <div class="contact__connect-info">
+                                <p> Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng</p>
+                                <p> chúng tôi, bạn có những chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt chỗ</p>
+                                <p> ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư... trở nên nhanh chóng,</p>
+                                <p> thuận tiện và dễ dàng.</p>
+                            </div>
+                            <!-- qr -->
+                            <div class="grid__row-50">
+
+                                <div class="grid__col-50--2 top__setting-67">
+                                    <div class="contact__connect-info-qr-wrap">
+                                        <div class="contact__connect-info-qr" style="background-image: url(./assets/img/img_connect/qr-code.png);"></div>
+    
+                                    </div>
+                                </div>
+                                <div class="grid__col-50--2 ">
+                                        <div class="contact__connect-info-3app-wrap">
+
+                                            <div class="grid__row-50">
+                                                <div class="grid__col-50--2">
+                                                    <a href="#" class="contact__connect-info-appstore-link">
+      
+                                                        <div class="contact__connect-info-item " style="background-image: url(./assets/img/img_connect/apple-store.svg);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="grid__col-50--2">
+                                                    <a href="#" class="contact__connect-info-huawei-link">
+      
+                                                        <div class="contact__connect-info-item " style="background-image: url(./assets/img/img_connect/huawei\ \(1\).svg);"></div>
+                                                    </a>
+                                            </div>
+                                            </div>
+                                            <div class="grid__row-50 contact__connect-info-chplay-padding ">
+                                              <div class="grid__col-50--2">
+                                                  <a href="#" class="contact__connect-info-chplay-link">
+      
+                                                      <div class="contact__connect-info-item   " style="background-image: url(./assets/img/img_connect/google-play.svg);"></div>
+                                                  </a>
+                                              </div>
+          
+                                         
+                                          </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                        <div class="grid__col-50">
+                            <div class="contact__connect-home-png" style="background-image: url(./assets/img/img_connect/home.png);"></div>
+                        </div>
+                </div>
+            
+                </div>
+            </div>
+           
+        </div>
+        <footer class="footer">
+            <div class="grid">
+
+                <div class="footer__information">
+                    <div class="grid__row-footer-5">
+                        <div class="grid__col-footer-5">
+                            <div class="footer__information-label">
+                                <svg version="1.1" viewBox="0 0 244 50" class="svg-icon svg-fill" style="width: 170px; height: 35px;">
+                                    <path
+                                        pid="0"
+                                        d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z"
+                                    ></path>
+                                </svg>
+                                
+                            </div>
+                            <div class="footer__information-item-wrap">
+                                <div class="footer__information-item-message-call-wrap">
+                                    <div class="footer__information-item-message-call-img-wrap">
+                                        <img class="footer__information-item-message-call-img" src="./assets/img/footer/message.PNG" alt="message.PNG">
+                                    </div>
+                                    <div class="footer__information-item-message-call-info-more">
+                                        <p class="footer__information-item-message-call-info-label">Messenger</p>
+                                        <a href="https://www.facebook.com/TR226/" class="footer__information-item-message-call-info-link">http://m.me/luxstay</a>
+                                    </div>
+                                </div>
+                                <div class="footer__information-item-message-call-wrap  footer__information-item-call-margin">
+                                    <div class="footer__information-item-message-call-img-wrap">
+                                        <img class="footer__information-item-message-call-img" src="./assets/img/footer/call.PNG" alt="message.PNG">
+                                    </div>
+                                    <div class="footer__information-item-message-call-info-more footer__margin-call-info">
+                                        <p class="footer__information-item-message-call-info-label">Call center</p>
+                                        <a href="https://www.facebook.com/TR226/" class="footer__information-item-message-call-info-link"> 18006586 (Việt Nam)</a>
+                                        <a href="https://www.facebook.com/TR226/" class="footer__information-item-message-call-info-link"> 0889866666</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="grid__col-footer-5">
+                            <div class="footer__information-label">TOP HOMESTAY ĐƯỢC YÊU THÍCH</div>
+                            <div class="footer__information-item-wrap">
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Đà Lạt</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Hà Nội</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Hồ Chí Minh</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Sapa</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Vũng Tàu</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Tam Đảo</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Hội An</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Đà Nẵng</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Vũng Tàu</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Phan Thiết</p></a>
+                            </div>
+                        </div>
+                        <div class="grid__col-footer-5">
+                            <div class="footer__information-label">KHÔNG GIAN ƯA THÍCH</div>
+                            <div class="footer__information-item-wrap">
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Căn hộ dịch vụ</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Biệt thự</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Nhà riêng</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Studio</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Travel guide</p></a>
+                            </div>
+                        </div>
+                        <div class="grid__col-footer-5">
+                            <div class="footer__information-label">VỀ CHÚNG TÔI</div>
+                            <div class="footer__information-item-wrap">
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Blog</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Điều khoản hoạt động</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">1800 6586</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">+84 8898 66666</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">info@luxstay.com</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Trang thông tin giành cho chủ nhà </p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Cơ hội nghề nghiệp</p></a>
+                                <a href="#" class="footer__information-link"> <p class="footer__information-item">Tạp chí du lịch</p></a>
+                            </div>
+                        </div>
+                        <div class="grid__col-footer-5">
+                            <div class="footer__information-label">TẢI ỨNG DỤNG LUXSTAY</div>
+                            <div class="footer__information-item-wrap">
+                                <div class="grid__row-50">
+                                    <div class="grid__col-50--2">
+                                        <div class="footer__connect-info-qr-wrap">
+                                            <div class="footer__connect-info-qr" style="background-image: url(./assets/img/img_connect/qr-code.png);"></div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="grid__col-50--2 ">
+                                            <div class="footer__connect-info-3app-wrap">
+                                                <!-- item -->
+                                                <div class="grid__row-50">
+                                                
+                                                        <a href="#" class="footer__connect-info-appstore-link">
+        
+                                                            <div class="footer__connect-info-item " >
+                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/apple-store.svg);"></div>
+                                                            </div>
+                                                        </a>
+                                                    
+                                                
+                                                </div>
+                                                <!-- item -->
+                                                <div class="grid__row-50">
+                                                
+                                                        <a href="#" class="footer__connect-info-appstore-link">
+        
+                                                            <div class="footer__connect-info-item " >
+                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/huawei\ \(1\).svg);"></div>
+                                                            </div>
+                                                        </a>
+                                                
+                                                
+                                                </div>
+                                                <!-- item -->
+                                                <div class="grid__row-50">
+                                                
+                                                        <a href="#" class="footer__connect-info-appstore-link">
+        
+                                                            <div class="footer__connect-info-item " >
+                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/google-play.svg);"></div>
+                                                            </div>
+                                                        </a>
+                                                    
+                                                
+                                                </div>
+                                            
+                                            
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__infomation--more">
+                    <div class="grid__row-50">
+    
+                        <div class="grid__col-50--2 ">
+                            <div class="footer__pay">
+                                <h3 class="footer__pay-label">SECURE YOUR TRANSACTION</h3>
+                                <ul class="footer__pay-list">
+                                    <li class="footer__pay-item"><img src="./assets/img/cart/visa1.svg" alt="visa1.svg" class="footer__pay-item-img"></li>
+                                    <li class="footer__pay-item"><img src="./assets/img/cart/mastercard2.svg" alt="visa1.svg" class="footer__pay-item-img"></li>
+                                    <li class="footer__pay-item"><img src="./assets/img/cart/maestro3.svg" alt="visa1.svg" class="footer__pay-item-img"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__col-50--2 ">
+                                <div class="footer__certificate__folow-wrap">
+                                    <div class="footer__certificate-wrap">
+                                        <h3 class="footer__certificate__folow-label">CERTIFICATION</h3>
+                                        <ul class="footer__certificate__folow-list">
+                                            <li class="footer__certificate__folow-item footer__certificate__folow-img--padding"><img src="./assets/img/certification/certificate.png" alt="certificate.png" class="footer__certificate__folow-img "></li>
+                                            <li class="footer__certificate__folow-item"><img src="./assets/img/certification/dmca.png" alt="certificate.png" class="footer__certificate__folow-img"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__folow-wrap">
+                                        <h3 class="footer__certificate__folow-label">FOLLOW US</h3>
+                                        <ul class="footer__certificate__folow-list">
+                                            <li class="footer__certificate__folow-item  footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M14.333 12c0-.644-.228-1.194-.683-1.65A2.248 2.248 0 0012 9.667c-.644 0-1.194.228-1.65.683A2.248 2.248 0 009.667 12c0 .644.228 1.194.683 1.65a2.248 2.248 0 001.65.683c.644 0 1.194-.228 1.65-.683a2.248 2.248 0 00.683-1.65zm1.258 0c0 .997-.35 1.844-1.048 2.543-.699.699-1.546 1.048-2.543 1.048-.997 0-1.844-.35-2.543-1.048-.699-.699-1.048-1.546-1.048-2.543 0-.997.35-1.844 1.048-2.543.699-.699 1.546-1.048 2.543-1.048.997 0 1.844.35 2.543 1.048.699.699 1.048 1.546 1.048 2.543zm.985-3.737a.81.81 0 01-.247.592.808.808 0 01-.592.247.808.808 0 01-.592-.247.808.808 0 01-.247-.592c0-.23.082-.428.247-.592a.808.808 0 01.592-.247.81.81 0 01.592.247.808.808 0 01.247.592zM12 6.258l-.697-.005a49.446 49.446 0 00-.962 0c-.219.003-.512.012-.88.028-.367.015-.68.045-.938.09a3.654 3.654 0 00-.652.17 2.365 2.365 0 00-.802.528c-.23.23-.407.498-.529.802a3.654 3.654 0 00-.168.652 7.223 7.223 0 00-.091.939c-.016.367-.025.66-.028.88a49.9 49.9 0 000 .96l.005.698-.005.697c-.003.423-.003.743 0 .962.003.219.012.512.028.88.015.367.045.68.09.938.046.258.103.476.17.652a2.375 2.375 0 001.33 1.331c.176.066.394.123.652.168.258.046.571.076.939.091.367.016.66.025.88.028.218.003.538.003.96 0l.698-.005.697.005c.423.003.743.003.962 0 .219-.003.512-.012.88-.028.367-.015.68-.045.938-.09.258-.046.476-.103.652-.17a2.375 2.375 0 001.331-1.33c.066-.176.123-.394.168-.652.046-.258.076-.571.091-.939.016-.367.025-.66.028-.88a49.9 49.9 0 000-.96L17.742 12l.005-.697c.003-.423.003-.743 0-.962a33.766 33.766 0 00-.028-.88 7.223 7.223 0 00-.09-.938 3.654 3.654 0 00-.17-.652 2.365 2.365 0 00-.528-.802 2.365 2.365 0 00-.802-.529 3.654 3.654 0 00-.652-.168 7.223 7.223 0 00-.939-.091c-.367-.016-.66-.025-.88-.028a49.9 49.9 0 00-.96 0L12 6.258zM19 12c0 1.392-.015 2.355-.046 2.89-.06 1.263-.437 2.242-1.13 2.934-.692.693-1.67 1.07-2.935 1.13-.534.03-1.497.046-2.889.046-1.392 0-2.355-.015-2.89-.046-1.263-.06-2.242-.437-2.934-1.13-.693-.692-1.07-1.67-1.13-2.935C5.016 14.355 5 13.392 5 12c0-1.392.015-2.355.046-2.89.06-1.263.437-2.242 1.13-2.934.692-.693 1.67-1.07 2.935-1.13C9.645 5.016 10.608 5 12 5c1.392 0 2.355.015 2.89.046 1.263.06 2.242.437 2.934 1.13.693.692 1.07 1.67 1.13 2.935.03.534.046 1.497.046 2.889z"></path></g></svg></a></li>
+                                            <li class="footer__certificate__folow-item footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M10.679 13.884l3.865-1.997-3.865-2.02v4.017zM12.156 7c.894 0 1.758.012 2.591.036.834.024 1.445.05 1.833.076l.583.032a5.326 5.326 0 01.32.036l.187.036c.088.016.164.037.228.064.064.026.138.06.224.103.085.043.167.095.247.156a1.894 1.894 0 01.356.36c.05.066.127.222.231.467.104.245.174.513.212.806.042.341.076.704.1 1.09.024.386.038.688.044.907v1.405c.005.772-.043 1.544-.144 2.316a3.186 3.186 0 01-.2.795c-.096.237-.18.4-.255.491l-.112.136c-.075.08-.152.15-.232.211-.08.062-.162.112-.247.152a6.87 6.87 0 01-.224.1c-.064.027-.14.048-.228.064l-.191.036a4.882 4.882 0 01-.315.036c-1.337.1-3.006.151-5.008.151-1.102-.01-2.06-.027-2.871-.051a62.25 62.25 0 01-1.601-.06l-.392-.032-.287-.032a3.791 3.791 0 01-.435-.08 2.454 2.454 0 01-.408-.168 1.597 1.597 0 01-.575-.475c-.05-.066-.127-.222-.231-.467a3.04 3.04 0 01-.212-.807c-.042-.34-.076-.704-.1-1.09A25.651 25.651 0 015 12.894v-1.406c-.005-.772.043-1.544.144-2.316.037-.293.104-.557.2-.794.096-.237.18-.401.255-.492l.112-.135c.075-.08.152-.15.232-.212.08-.061.162-.113.247-.156a3.65 3.65 0 01.224-.103c.064-.027.14-.048.228-.064l.187-.036a5.326 5.326 0 01.32-.036C8.485 7.048 10.154 7 12.156 7z"></path></g></svg></a></li>
+                                            <li class="footer__certificate__folow-item footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M15.429 5.242v2.176h-1.246c-.455 0-.762.098-.921.296-.159.198-.238.495-.238.89v1.558h2.325l-.31 2.44h-2.015v6.255h-2.429v-6.255H8.571v-2.44h2.024V8.365c0-1.022.275-1.814.826-2.377.55-.564 1.283-.845 2.198-.845.778 0 1.381.033 1.81.099z"></path></g></svg></a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__end">
+                <p class="footer__end-coppy-right">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
+                <p class="footer__address">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</p>
+                <p class="footer__certificate">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</p>
+            </div>
+        </footer>
+    
+</body>
+</html>
