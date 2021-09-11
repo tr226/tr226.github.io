@@ -9,433 +9,500 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+   
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid header_wrap">
-                <div class="header-with-search">
-                    <div class="header__logo">
-                        <svg version="1.1" viewBox="0 0 50 50" class="header__logo-fill" style="width: 50px; height: 50px;">
-                            <path
-                                pid="0"
-                                d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
-                            ></path>
-                        </svg>
-                        
-                    </div>
-                    <div class="header__search">
-                        <div class="header__search-cover">
+            <div class="grid wide ">
+                <div class=" header_wrap">
 
-                            <i class="header__search-icon ti-search"></i>
-                            <input type="text" class="header__search-input" placeholder="Tìm kiếm ">
+                    <div class="header-with-search">
+                        <div class="header__logo hidden-on-mobile-tablet">
+                            <svg version="1.1" viewBox="0 0 50 50" class="header__logo-fill" style="width: 50px; height: 50px;">
+                                <path
+                                    pid="0"
+                                    d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                                ></path>
+                            </svg>
+                            
                         </div>
-                        <div class="header__search-selection">
-                            <div class="header__search-selection-date ">
-                                <i class="header__search-selection-icon-date far fa-calendar"></i>
-                                <span class="header__search-selection-label">Ngày</span>
-                                    <!-- calender -->
-                                <div class="header__date">
-
-                                    <div class="header__date-month-wrap">
-                                            <div class="header__date-calender-sep-in">
-                                                <div class="header__date-calender-sept-in-btn">
-                                                    <i class="btn_left ti-arrow-left"></i>
-                                                </div>
-
-                                                <h3 class="header__date-9">September 2021</h3>
-                                            </div>
-                                   
-                                            <div class="header__date-calender-oct-in">
-                                            <div class="header__date-calender-oct-in-btn">
-                                                <i class="btn_right ti-arrow-right"></i>
-                                            </div>
-                                            <h3 class="header__date-10">October 2021</h3>
-                                            </div>
-                                    </div>
-                                        
-                                 
-                                    <div class="grid__date-calender">
-                                        <div class="header__date-calender-sep-out">
-                                            
-                                            <div class="grid-calender-1-2">
-                                                <div class="grid__row-calender">
-                                                    <div class="month grid__col-calender curser__defaul">
-                                                       Mon
+                        <div class="header__search">
+                            <div class="header__search-cover">
+    
+                                <i class="header__search-icon ti-search"></i>
+                                <input type="text" class="header__search-input" placeholder="Tìm kiếm ">
+                            </div>
+                            <div class="header__search-selection hidden-on-mobile-tablet">
+                                <div class="header__search-selection-date ">
+                                    <i class="header__search-selection-icon-date far fa-calendar"></i>
+                                    <span class="header__search-selection-label">Ngày</span>
+                                        <!-- calender -->
+                                    <div class="header__date">
+    
+                                        <div class="header__date-month-wrap">
+                                                <div class="header__date-calender-sep-in">
+                                                    <div class="header__date-calender-sept-in-btn">
+                                                        <i class="btn_left ti-arrow-left"></i>
                                                     </div>
-                                                    <div class="month grid__col-calender curser__defaul">
-                                                        Tue
-                                                     </div>
-                                                    
-                                                     <div class="month grid__col-calender curser__defaul">
-                                                         Wed
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                        Thu
-                                                     </div>
-                                                     <div class="month grid__col-calender curser__defaul">
-                                                         Fri
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                         Sat
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                        Sun
-                                                     </div>
-                                                     
-                                                     
+    
+                                                    <h3 class="header__date-9">September 2021</h3>
                                                 </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender background-white">
-                                                       
-                                                    </div>
-                                                    <div class="day grid__col-calender background-white">
-                                                        
-                                                     </div>
-                                                     <div class="day grid__col-calender background-ago">
-                                                        1
-                                                     </div>
-                                                     <div class="day grid__col-calender background-ago">
-                                                         2
-                                                      </div>
-                                                      <div class="day grid__col-calender background-today">
-                                                        3
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         4
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         5
-                                                      </div>     
-                                                                                          
-                                                     
-                                                     
+                                       
+                                                <div class="header__date-calender-oct-in">
+                                                <div class="header__date-calender-oct-in-btn">
+                                                    <i class="btn_right ti-arrow-right"></i>
                                                 </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       6
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        7
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        8
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         9
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        10
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         11
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         12
-                                                      </div>                                             
-                                                     
-                                                     
+                                                <h3 class="header__date-10">October 2021</h3>
                                                 </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       13
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        14
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        15
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         16
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        17
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         18
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         19
-                                                      </div>                                             
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                   
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       20
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        21
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        22
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         23
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        24
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         25
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         26
-                                                      </div>                                             
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       27
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        28
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        29
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         30
-                                                      </div>
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                
-                                            </div>
-                                            <div class="header_date-option-delete"><a href="#" class="header_date-option-delete-link">Xóa</a></div>
-                                            
                                         </div>
-                                        <div class="header__date-calender-oct-out">
-                                           
-                                            <div class="grid-calender-1-2">
-                                                <div class="grid__row-calender">
-                                                    <div class="month grid__col-calender curser__defaul">
-                                                       Mon
-                                                    </div>
-                                                    <div class="month grid__col-calender curser__defaul">
-                                                        Tue
-                                                     </div>
-                                                    
-                                                     <div class="month grid__col-calender curser__defaul">
-                                                         Wed
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                        Thu
-                                                     </div>
-                                                     <div class="month grid__col-calender curser__defaul">
-                                                         Fri
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                         Sat
-                                                      </div>
-                                                      <div class="month grid__col-calender curser__defaul">
-                                                        Sun
-                                                     </div>
-                                                     
-                                                     
-                                                </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender background-white">
-                                                       
-                                                    </div>
-                                                    <div class="day grid__col-calender background-white">
-                                                        
-                                                     </div>
-                                                     <div class="day grid__col-calender background-white">
-                                                        
-                                                     </div>
-                                                     <div class="day grid__col-calender background-white">
-                                                         
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        1
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         2
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         3
-                                                      </div>     
-                                                                                          
-                                                     
-                                                     
-                                                </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       4
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        5
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        6
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         7
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        8
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         9
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         10
-                                                      </div>                                             
-                                                     
-                                                     
-                                                </div>
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       11
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        12
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        13
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         14
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        15
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         16
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         17
-                                                      </div>                                             
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                   
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       18
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        19
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        20
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         21
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        22
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         23
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                         24
-                                                      </div>                                             
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                <div class="grid__row-calender">
-                                                    <div class="day grid__col-calender">
-                                                       25
-                                                    </div>
-                                                    <div class="day grid__col-calender">
-                                                        26
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                        27
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         28
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        29
-                                                     </div>
-                                                     <div class="day grid__col-calender">
-                                                         30
-                                                      </div>
-                                                      <div class="day grid__col-calender">
-                                                        31
-                                                     </div>
-                                                     
-                                                     
-                                                </div>
-                                                
-                                                
-                                            </div>
-                                            <div class="header_date-option-apply">  <a href="#" class="header_date-option-apply-link">Áp dụng</a>  </div>
-                                        </div>
+                                            
                                      
-                                    </div>
-                              </div>     
+                                        <div class="grid__date-calender">
+                                            <div class="header__date-calender-sep-out">
+                                                
+                                                <div class="grid-calender-1-2">
+                                                    <div class="grid__row-calender">
+                                                        <div class="month grid__col-calender curser__defaul">
+                                                           Mon
+                                                        </div>
+                                                        <div class="month grid__col-calender curser__defaul">
+                                                            Tue
+                                                         </div>
+                                                        
+                                                         <div class="month grid__col-calender curser__defaul">
+                                                             Wed
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                            Thu
+                                                         </div>
+                                                         <div class="month grid__col-calender curser__defaul">
+                                                             Fri
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                             Sat
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                            Sun
+                                                         </div>
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender background-white">
+                                                           
+                                                        </div>
+                                                        <div class="day grid__col-calender background-white">
+                                                            
+                                                         </div>
+                                                         <div class="day grid__col-calender background-ago">
+                                                            1
+                                                         </div>
+                                                         <div class="day grid__col-calender background-ago">
+                                                             2
+                                                          </div>
+                                                          <div class="day grid__col-calender background-today">
+                                                            3
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             4
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             5
+                                                          </div>     
+                                                                                              
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           6
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            7
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            8
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             9
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            10
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             11
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             12
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           13
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            14
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            15
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             16
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            17
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             18
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             19
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                       
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           20
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            21
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            22
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             23
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            24
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             25
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             26
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           27
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            28
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            29
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             30
+                                                          </div>
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="header_date-option-delete"><a href="#" class="header_date-option-delete-link">Xóa</a></div>
+                                                
+                                            </div>
+                                            <div class="header__date-calender-oct-out">
+                                               
+                                                <div class="grid-calender-1-2">
+                                                    <div class="grid__row-calender">
+                                                        <div class="month grid__col-calender curser__defaul">
+                                                           Mon
+                                                        </div>
+                                                        <div class="month grid__col-calender curser__defaul">
+                                                            Tue
+                                                         </div>
+                                                        
+                                                         <div class="month grid__col-calender curser__defaul">
+                                                             Wed
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                            Thu
+                                                         </div>
+                                                         <div class="month grid__col-calender curser__defaul">
+                                                             Fri
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                             Sat
+                                                          </div>
+                                                          <div class="month grid__col-calender curser__defaul">
+                                                            Sun
+                                                         </div>
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender background-white">
+                                                           
+                                                        </div>
+                                                        <div class="day grid__col-calender background-white">
+                                                            
+                                                         </div>
+                                                         <div class="day grid__col-calender background-white">
+                                                            
+                                                         </div>
+                                                         <div class="day grid__col-calender background-white">
+                                                             
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            1
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             2
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             3
+                                                          </div>     
+                                                                                              
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           4
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            5
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            6
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             7
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            8
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             9
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             10
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           11
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            12
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            13
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             14
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            15
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             16
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             17
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                       
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           18
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            19
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            20
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             21
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            22
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             23
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                             24
+                                                          </div>                                             
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                    <div class="grid__row-calender">
+                                                        <div class="day grid__col-calender">
+                                                           25
+                                                        </div>
+                                                        <div class="day grid__col-calender">
+                                                            26
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                            27
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             28
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            29
+                                                         </div>
+                                                         <div class="day grid__col-calender">
+                                                             30
+                                                          </div>
+                                                          <div class="day grid__col-calender">
+                                                            31
+                                                         </div>
+                                                         
+                                                         
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="header_date-option-apply">  <a href="#" class="header_date-option-apply-link">Áp dụng</a>  </div>
+                                            </div>
+                                         
+                                        </div>
+                                  </div>     
+                                </div>
+                                
+                                <div class="header__search-selection-quantity">
+                                    <i class="header__search-selection-icon-quantity far fa-calendar"></i>
+                                    <span class="header__search-selection-label">Số khách</span>
+                                </div>
+                                
+                                
                             </div>
-                            
-                            <div class="header__search-selection-quantity">
-                                <i class="header__search-selection-icon-quantity far fa-calendar"></i>
-                                <span class="header__search-selection-label">Số khách</span>
+                            <div class="header__search-btn hidden-on-mobile-tablet">
+                                <i class="header__search-btn-icon ti-search"></i>
                             </div>
-                            
-                            
-                        </div>
-                        <div class="header__search-btn">
-                            <i class="header__search-btn-icon ti-search"></i>
                         </div>
                     </div>
-                </div>
-                <div class="header__navbar">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Guide</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link dot_notication">Host</a>
-                            <div class="header__navbar-item-notication">
+                    <!-- btn----tablet---mobile -->
+                    <input type="checkbox" hidden class="nav__input"id=" nav-mobile-tablet-ipt">
+                    <label for=" nav-mobile-tablet-ipt" class="nav__overlay"></label>
+                  
+                    <label for=" nav-mobile-tablet-ipt"class="header__bar-mobile-tablet ">
+                        <i class="header__bar-mobile-tablet-icon fas fa-bars"></i>
+                    </label>
+                    <!-- navbar__btn -->
+                    <div class="header__navbar-mobile" >
+                        <label for=" nav-mobile-tablet-ipt" class="header__navbar-mobile-close">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <ul class="header__navbar-mobile-list">
+                            <li class="header__navbar-mobile-item">
+                                <a href="" class="header__navbar-mobile-link">Guide</a>
+                            </li>
+                            <li class="header__navbar-mobile-item">
+                                <a href="" class="header__navbar-mobile-link dot_notication">Host</a>
+                                <div class="header__navbar-mobile-item-notication">
+    
+                                </div>
+                            </li>
+                            <li class="header__navbar-mobile-item">
+                                <a href="" class="header__navbar-mobile-link">Đăng kí</a>
+                            </li>
+                            <li class="header__navbar-mobile-item">
+                                <a href="" class="header__navbar-mobile-link">Đăng nhập</a>
+                            </li>  
+                        </ul>
+                        <a href="" class="header__navbar-mobile-language__link">
+                            <div class="header__navbar-mobile-language">
+                                <div class="header__navbar-mobile-language-derectional-wrap">
+                                    <div class="header__navbar-mobile-language-derectional">
 
-                            </div>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Đăng kí</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Đăng nhập</a>
-                        </li>  
-                    </ul>
-                    <a href="" class="header__navbar-language__link">
-                        <div class="header__navbar-language">
-                       
-                            <div class="header__navbar-language__flag-out">
-
-                                <i class="header__navbar-language__star fas fa-star"></i>
-                            </div>
-                             <span class="header__navbar-language-nation">VND</span> 
-                             <i class="header__navbar-language_down fas fa-sort-down"></i>
+                                        <div class="header__navbar-mobile-language__flag-out">
+            
+                                            <i class="header__navbar-mobile-language__star fas fa-star"></i>
+                                        </div>
+                                         <span class="header__navbar-mobile-language-nation">VND</span> 
+                                    </div>
+                                    
+                                </div>
+                                <i class="header__navbar-mobile-language_down fas fa-sort-down"></i>
+                                
+                             </div>
+                        </a>
+                                
                             
-                            </div>
-                    </a>
                             
                         
+                    </div>
+                    <!-- navbar -->
+                    <div class="header__navbar hidden-on-mobile-tablet" >
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Guide</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link dot_notication">Host</a>
+                                <div class="header__navbar-item-notication">
+    
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Đăng kí</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Đăng nhập</a>
+                            </li>  
+                        </ul>
+                        <a href="" class="header__navbar-language__link">
+                            <div class="header__navbar-language">
+                           
+                                <div class="header__navbar-language__flag-out">
+    
+                                    <i class="header__navbar-language__star fas fa-star"></i>
+                                </div>
+                                 <span class="header__navbar-language-nation">VND</span> 
+                                 <i class="header__navbar-language_down fas fa-sort-down"></i>
+                                
+                                </div>
+                        </a>
+                                
+                            
+                            
                         
-                    
+                    </div>
                 </div>
                 
             </div>
         </header>
         <div class="contact">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- -------------background------------- -->
-                <div class="contact_bakground" style="background-image: url(https://beta-api.luxstay.net/api/upload/file?storage=admins/12/90D5fOM9lCriVigTdM4ZxXjm.jpg);"></div>
+                <div class="contact_bakground-wapper">
+                    <div class="slider slider-1">
+                        <div class="contact_bakground" style="background-image: url(https://beta-api.luxstay.net/api/upload/file?storage=admins/12/90D5fOM9lCriVigTdM4ZxXjm.jpg);"></div>
+
+                    </div>
+                    <div class="slider slider-2">
+                        <div class="contact_bakground" style="background-image: url(./assets/img/bkrg2.png);"></div>
+
+                    </div>
+                </div>
                 <!-- ----------------welcome------------- -->
                 <div class="contact__welcome">
                     <h2 class="contact__welcome-label">Chào mừng đến với Luxstay!</h2>
@@ -444,14 +511,20 @@
                 </div>
                 <!-- ----------------places------------- -->
                 <div class="contact__places">
-                    <h2 class="label__hightlight">Địa điểm nổi bật</h2>
-                    <span class="label-text">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+                    <div class="contact__wrapper-label">
+
+                        <h2 class="label__hightlight">Địa điểm nổi bật</h2>
+                        <span class="label-text hidden-on-mobile-tablet">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+                    </div>
+                    <div class="contact__place-btn hidden-on-mobile ">
+
+                        <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
+                        <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
+                    </div>
                     <div class="contact__places-img-list">
-                        <div class="btn-left contact__places__local-left"><i class="  fas fa-chevron-left"></i></div>
-                        <div class="btn-right contact__places__local-right"><i class="fas fa-chevron-right"></i></div>
                         
-                        <div class="grid_row__place-2-4">
-                            <div class="grid__col-2-4">
+                        <div class="row no-wrap-tablet">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a href="" class="contact__places-img-link">
 
                                     <div class="contact__places-img-item" style="background-image: url(./assets/img/hn.png);">
@@ -464,7 +537,7 @@
                                 </a>
                              
                             </div>
-                            <div class="grid__col-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a href="" class="contact__places-img-link">
                                 
                                 <div class="contact__places-img-item" style="background-image: url(./assets/img/hcm.png);">
@@ -476,7 +549,7 @@
                                 </div>
                              </a>   
                             </div>
-                            <div class="grid__col-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a href="" class="contact__places-img-link">
 
                                 <div class="contact__places-img-item" style="background-image: url(./assets/img/vt.png);">
@@ -488,7 +561,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="grid__col-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a href="" class="contact__places-img-link">
 
                                 <div class="contact__places-img-item" style="background-image: url(./assets/img/dl.png);">
@@ -500,7 +573,7 @@
                                 </div>
                              </a>
                             </div>
-                            <div class="grid__col-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a href="" class="contact__places-img-link">
 
                                 <div class="contact__places-img-item" style="background-image: url(./assets/img/dn.png);">
@@ -523,8 +596,8 @@
                     <h2 class="label__hightlight">Ưu đãi độc quyền</h2>
                     <p class="label-text">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
                     <div class="contact__endow_list">
-                        <div class="grid__row-3">
-                            <div class="grid__col-3">
+                        <div class="row no-wrap-tablet">
+                            <div class="col l-4 m-6 c-12">
                                 <a href="" class="contact__endow_link">
                                     <div class="contact__endow-item" >
                                         <div class="contact__endow-img" style="background-image:url(./assets/img/endow_1.png);"></div>
@@ -532,7 +605,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-6 c-12">
                                 <a href="" class="contact__endow_link">
                                     <div class="contact__endow-item" >
                                         <div class="contact__endow-img" style="background-image:url(./assets/img/endow_2.pong.jpg);"></div>
@@ -540,7 +613,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-6 c-12">
                                 <a href="" class="contact__endow_link">
                                     <div class="contact__endow-item" >
                                         <div class="contact__endow-img" style="background-image:url(./assets/img/endow_3.png);"></div>
@@ -556,13 +629,16 @@
                 <div class="contact__recomemnd">
                     <h2 class="label__hightlight">Ưu đãi độc quyền</h2>
                     <p class="label-text">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
-                    <div class="contact__recommend-list">
-                        <div class="btn-left contact__recomemnd__local-left"><i class="  fas fa-chevron-left"></i></div>
-                        <div class="btn-right contact__recomemnd__local-right"><i class="fas fa-chevron-right"></i></div>
+                    <div class="contact__recommend_btn  hidden-on-mobile">
 
-                        <div class="grid__row__recommend-4">                            
+                        <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
+                        <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="contact__recommend-list">
+
+                        <div class="row no-wrap-tablet ">                            
                             <!-- item -->
-                            <div class="grid__col__recommend-4">
+                            <div class="col l-3 m-6 c-12">
                                 <a href="#" class="contact__recommend-item-link">
 
                                     <div class="contact__recommend-item">
@@ -576,7 +652,7 @@
                                 
                             </div>
                                <!-- item -->
-                               <div class="grid__col__recommend-4">
+                               <div class="col l-3 m-6 c-12">
                                 <a href="#" class="contact__recommend-item-link">
 
                                     <div class="contact__recommend-item">
@@ -590,7 +666,7 @@
                                 
                             </div>
                                <!-- item -->
-                               <div class="grid__col__recommend-4">
+                               <div class="col l-3 m-6 c-12">
                                 <a href="#" class="contact__recommend-item-link">
 
                                     <div class="contact__recommend-item">
@@ -604,7 +680,7 @@
                                 
                             </div>
                                <!-- item -->
-                               <div class="grid__col__recommend-4">
+                               <div class="col l-3 m-6 c-12">
                                 <a href="#" class="contact__recommend-item-link">
 
                                     <div class="contact__recommend-item">
@@ -626,12 +702,12 @@
                     <h2 class="label__hightlight">Gợi ý khám phá</h2>
                     <p class="label-text">Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên</p>
                     <div class="contact__discovery-list">
-                        <div class="grid__row-3">
-                            <div class="contact__discovery_btn">
+                        <div class="row no-wrap-tablet">
+                            <div class="contact__discovery_btn hidden-on-mobile ">
                                 <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
                                 <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__discovery-link">
 
@@ -642,7 +718,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__discovery-link">
 
@@ -653,7 +729,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__discovery-link">
 
@@ -674,12 +750,12 @@
                     <h2 class="label__hightlight">Hướng dẫn sử dụng</h2>
                     <p class="label-text">Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng</p>
                     <div class="contact__guide-list">
-                        <div class="grid__row-3">
-                            <div class="contact__guide_btn">
+                        <div class="row no-wrap-tablet">
+                            <div class="contact__guide_btn hidden-on-mobile ">
                                 <div class="btn-left "><i class="  fas fa-chevron-left"></i></div>
                                 <div class="btn-right "><i class="fas fa-chevron-right"></i></div>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__guide-link">
 
@@ -689,7 +765,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__guide-link">
 
@@ -699,7 +775,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__col-3">
+                            <div class="col l-4 m-12 c-12">
                                 <!-- item -->
                                 <a href="#" class="contact__guide-link">
 
@@ -720,8 +796,8 @@
                 </div>
                 <!-- ---------------CONECT------------------ -->
                 <div class="contact__connect">
-                    <div class="grid__row-50">
-                        <div class="grid__col-50">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12 ">
                             <svg version="1.1" viewBox="0 0 244 50" class="contact_connect-logo">
                                 <path
                                     pid="0"
@@ -729,26 +805,40 @@
                                 ></path>
                             </svg>
                             <h1 class="contact__connect-label">TÌM KIẾM CHỖ Ở GIÁ TỐT NHẤT</h1>
-                            <div class="contact__connect-info">
+                            <div class="contact__connect-info hidden-on-mobile-tablet">
                                 <p> Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng</p>
                                 <p> chúng tôi, bạn có những chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt chỗ</p>
                                 <p> ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư... trở nên nhanh chóng,</p>
                                 <p> thuận tiện và dễ dàng.</p>
                             </div>
+                            <div class=" contact__connect-info-tablet hidden-on-mobile">
+                                <p> Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng chúng tôi, bạn có những</p>
+                                <p>  chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng,</p>
+                                <p>  chung cư... trở nên nhanh chóng, thuận tiện và dễ dàng.</p>
+                               
+                            </div>
+                            <div class=" contact__connect-info-mobile hidden-on-tablet">
+                                <p> Luxstay hiện là nền tảng đặt phòng trực tuyến #1  </p>
+                                <p> Việt Nam.Đồng hành cùng chúng tôi, bạn có những</p>
+                                <p>  chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt</p>
+                                <p> chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng,</p>
+                                <p>  chung cư... trở nên nhanh chóng, thuận tiện và dễ dàng.</p>
+                               
+                            </div>
                             <!-- qr -->
-                            <div class="grid__row-50">
+                            <div class="row">
 
-                                <div class="grid__col-50--2 top__setting-67">
+                                <div class="col l-6 m-0 c-0 top__setting-67">
                                     <div class="contact__connect-info-qr-wrap">
                                         <div class="contact__connect-info-qr" style="background-image: url(./assets/img/img_connect/qr-code.png);"></div>
     
                                     </div>
                                 </div>
-                                <div class="grid__col-50--2 ">
+                                <div class="col l-6 m-12 c-12">
                                         <div class="contact__connect-info-3app-wrap">
 
-                                            <div class="grid__row-50">
-                                                <div class="grid__col-50--2">
+                                            <div class="row">
+                                                <div class="col l-6 m-6 c-6">
                                                     <a href="#" class="contact__connect-info-appstore-link">
       
                                                         <div class="contact__connect-info-item " style="background-image: url(./assets/img/img_connect/apple-store.svg);"></div>
@@ -775,7 +865,7 @@
                                 </div>
                         </div>
                     </div>
-                        <div class="grid__col-50">
+                        <div class="col l-6 m-12 c-12">
                             <div class="contact__connect-home-png" style="background-image: url(./assets/img/img_connect/home.png);"></div>
                         </div>
                 </div>
@@ -785,11 +875,11 @@
            
         </div>
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
 
                 <div class="footer__information">
-                    <div class="grid__row-footer-5">
-                        <div class="grid__col-footer-5">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-12">
                             <div class="footer__information-label">
                                 <svg version="1.1" viewBox="0 0 244 50" class="svg-icon svg-fill" style="width: 170px; height: 35px;">
                                     <path
@@ -822,7 +912,7 @@
                             </div>
                             
                         </div>
-                        <div class="grid__col-footer-5">
+                        <div class="col l-2-4 m-6 c-0">
                             <div class="footer__information-label">TOP HOMESTAY ĐƯỢC YÊU THÍCH</div>
                             <div class="footer__information-item-wrap">
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Đà Lạt</p></a>
@@ -837,7 +927,7 @@
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Homestay Phan Thiết</p></a>
                             </div>
                         </div>
-                        <div class="grid__col-footer-5">
+                        <div class="col l-2-4 m-4 c-0">
                             <div class="footer__information-label">KHÔNG GIAN ƯA THÍCH</div>
                             <div class="footer__information-item-wrap">
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Căn hộ dịch vụ</p></a>
@@ -847,7 +937,7 @@
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Travel guide</p></a>
                             </div>
                         </div>
-                        <div class="grid__col-footer-5">
+                        <div class="col l-2-4 m-4 c-0">
                             <div class="footer__information-label">VỀ CHÚNG TÔI</div>
                             <div class="footer__information-item-wrap">
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Blog</p></a>
@@ -860,55 +950,58 @@
                                 <a href="#" class="footer__information-link"> <p class="footer__information-item">Tạp chí du lịch</p></a>
                             </div>
                         </div>
-                        <div class="grid__col-footer-5">
+                        <div class="col l-2-4 m-4 c-0">
                             <div class="footer__information-label">TẢI ỨNG DỤNG LUXSTAY</div>
                             <div class="footer__information-item-wrap">
-                                <div class="grid__row-50">
-                                    <div class="grid__col-50--2">
+                                <div class="row">
+                                    <div class="col l-6 m-0 c-0">
                                         <div class="footer__connect-info-qr-wrap">
                                             <div class="footer__connect-info-qr" style="background-image: url(./assets/img/img_connect/qr-code.png);"></div>
         
                                         </div>
                                     </div>
-                                    <div class="grid__col-50--2 ">
+                                    <div class="col l-6 m-12 c-0 ">
                                             <div class="footer__connect-info-3app-wrap">
-                                                <!-- item -->
-                                                <div class="grid__row-50">
-                                                
-                                                        <a href="#" class="footer__connect-info-appstore-link">
-        
-                                                            <div class="footer__connect-info-item " >
-                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/apple-store.svg);"></div>
-                                                            </div>
-                                                        </a>
+                                                <div class="row" >
+
+                                                    <!-- item -->
+                                                    <div class="col l-12 m-12 c-12">
                                                     
-                                                
-                                                </div>
-                                                <!-- item -->
-                                                <div class="grid__row-50">
-                                                
-                                                        <a href="#" class="footer__connect-info-appstore-link">
-        
-                                                            <div class="footer__connect-info-item " >
-                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/huawei\ \(1\).svg);"></div>
-                                                            </div>
-                                                        </a>
-                                                
-                                                
-                                                </div>
-                                                <!-- item -->
-                                                <div class="grid__row-50">
-                                                
-                                                        <a href="#" class="footer__connect-info-appstore-link">
-        
-                                                            <div class="footer__connect-info-item " >
-                                                                <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/google-play.svg);"></div>
-                                                            </div>
-                                                        </a>
+                                                            <a href="#" class="footer__connect-info-appstore-link">
+            
+                                                                <div class="footer__connect-info-item " >
+                                                                    <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/apple-store.svg);"></div>
+                                                                </div>
+                                                            </a>
+                                                        
                                                     
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="col l-12 m-12 c-12">
+                                                    
+                                                            <a href="#" class="footer__connect-info-appstore-link">
+            
+                                                                <div class="footer__connect-info-item " >
+                                                                    <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/huawei\ \(1\).svg);"></div>
+                                                                </div>
+                                                            </a>
+                                                    
+                                                    
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="col l-12 m-12 c-12">
+                                                    
+                                                            <a href="#" class="footer__connect-info-appstore-link">
+            
+                                                                <div class="footer__connect-info-item " >
+                                                                    <div class="footer__connect-info-item-img" style="background-image: url(./assets/img/img_connect/google-play.svg);"></div>
+                                                                </div>
+                                                            </a>
+                                                        
+                                                    
+                                                    </div>
                                                 
                                                 </div>
-                                            
                                             
                                             </div>
                                     </div>
@@ -918,9 +1011,9 @@
                     </div>
                 </div>
                 <div class="footer__infomation--more">
-                    <div class="grid__row-50">
+                    <div class="row">
     
-                        <div class="grid__col-50--2 ">
+                        <div class="col l-6 m-6 c-12 ">
                             <div class="footer__pay">
                                 <h3 class="footer__pay-label">SECURE YOUR TRANSACTION</h3>
                                 <ul class="footer__pay-list">
@@ -930,7 +1023,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__col-50--2 ">
+                        <div class="col l-6 m-6 c-12">
                                 <div class="footer__certificate__folow-wrap">
                                     <div class="footer__certificate-wrap">
                                         <h3 class="footer__certificate__folow-label">CERTIFICATION</h3>
@@ -941,7 +1034,7 @@
                                     </div>
                                     <div class="footer__folow-wrap">
                                         <h3 class="footer__certificate__folow-label">FOLLOW US</h3>
-                                        <ul class="footer__certificate__folow-list">
+                                        <ul class="footer__certificate__folow-list margin-on-mobile">
                                             <li class="footer__certificate__folow-item  footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M14.333 12c0-.644-.228-1.194-.683-1.65A2.248 2.248 0 0012 9.667c-.644 0-1.194.228-1.65.683A2.248 2.248 0 009.667 12c0 .644.228 1.194.683 1.65a2.248 2.248 0 001.65.683c.644 0 1.194-.228 1.65-.683a2.248 2.248 0 00.683-1.65zm1.258 0c0 .997-.35 1.844-1.048 2.543-.699.699-1.546 1.048-2.543 1.048-.997 0-1.844-.35-2.543-1.048-.699-.699-1.048-1.546-1.048-2.543 0-.997.35-1.844 1.048-2.543.699-.699 1.546-1.048 2.543-1.048.997 0 1.844.35 2.543 1.048.699.699 1.048 1.546 1.048 2.543zm.985-3.737a.81.81 0 01-.247.592.808.808 0 01-.592.247.808.808 0 01-.592-.247.808.808 0 01-.247-.592c0-.23.082-.428.247-.592a.808.808 0 01.592-.247.81.81 0 01.592.247.808.808 0 01.247.592zM12 6.258l-.697-.005a49.446 49.446 0 00-.962 0c-.219.003-.512.012-.88.028-.367.015-.68.045-.938.09a3.654 3.654 0 00-.652.17 2.365 2.365 0 00-.802.528c-.23.23-.407.498-.529.802a3.654 3.654 0 00-.168.652 7.223 7.223 0 00-.091.939c-.016.367-.025.66-.028.88a49.9 49.9 0 000 .96l.005.698-.005.697c-.003.423-.003.743 0 .962.003.219.012.512.028.88.015.367.045.68.09.938.046.258.103.476.17.652a2.375 2.375 0 001.33 1.331c.176.066.394.123.652.168.258.046.571.076.939.091.367.016.66.025.88.028.218.003.538.003.96 0l.698-.005.697.005c.423.003.743.003.962 0 .219-.003.512-.012.88-.028.367-.015.68-.045.938-.09.258-.046.476-.103.652-.17a2.375 2.375 0 001.331-1.33c.066-.176.123-.394.168-.652.046-.258.076-.571.091-.939.016-.367.025-.66.028-.88a49.9 49.9 0 000-.96L17.742 12l.005-.697c.003-.423.003-.743 0-.962a33.766 33.766 0 00-.028-.88 7.223 7.223 0 00-.09-.938 3.654 3.654 0 00-.17-.652 2.365 2.365 0 00-.528-.802 2.365 2.365 0 00-.802-.529 3.654 3.654 0 00-.652-.168 7.223 7.223 0 00-.939-.091c-.367-.016-.66-.025-.88-.028a49.9 49.9 0 00-.96 0L12 6.258zM19 12c0 1.392-.015 2.355-.046 2.89-.06 1.263-.437 2.242-1.13 2.934-.692.693-1.67 1.07-2.935 1.13-.534.03-1.497.046-2.889.046-1.392 0-2.355-.015-2.89-.046-1.263-.06-2.242-.437-2.934-1.13-.693-.692-1.07-1.67-1.13-2.935C5.016 14.355 5 13.392 5 12c0-1.392.015-2.355.046-2.89.06-1.263.437-2.242 1.13-2.934.692-.693 1.67-1.07 2.935-1.13C9.645 5.016 10.608 5 12 5c1.392 0 2.355.015 2.89.046 1.263.06 2.242.437 2.934 1.13.693.692 1.07 1.67 1.13 2.935.03.534.046 1.497.046 2.889z"></path></g></svg></a></li>
                                             <li class="footer__certificate__folow-item footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M10.679 13.884l3.865-1.997-3.865-2.02v4.017zM12.156 7c.894 0 1.758.012 2.591.036.834.024 1.445.05 1.833.076l.583.032a5.326 5.326 0 01.32.036l.187.036c.088.016.164.037.228.064.064.026.138.06.224.103.085.043.167.095.247.156a1.894 1.894 0 01.356.36c.05.066.127.222.231.467.104.245.174.513.212.806.042.341.076.704.1 1.09.024.386.038.688.044.907v1.405c.005.772-.043 1.544-.144 2.316a3.186 3.186 0 01-.2.795c-.096.237-.18.4-.255.491l-.112.136c-.075.08-.152.15-.232.211-.08.062-.162.112-.247.152a6.87 6.87 0 01-.224.1c-.064.027-.14.048-.228.064l-.191.036a4.882 4.882 0 01-.315.036c-1.337.1-3.006.151-5.008.151-1.102-.01-2.06-.027-2.871-.051a62.25 62.25 0 01-1.601-.06l-.392-.032-.287-.032a3.791 3.791 0 01-.435-.08 2.454 2.454 0 01-.408-.168 1.597 1.597 0 01-.575-.475c-.05-.066-.127-.222-.231-.467a3.04 3.04 0 01-.212-.807c-.042-.34-.076-.704-.1-1.09A25.651 25.651 0 015 12.894v-1.406c-.005-.772.043-1.544.144-2.316.037-.293.104-.557.2-.794.096-.237.18-.401.255-.492l.112-.135c.075-.08.152-.15.232-.212.08-.061.162-.113.247-.156a3.65 3.65 0 01.224-.103c.064-.027.14-.048.228-.064l.187-.036a5.326 5.326 0 01.32-.036C8.485 7.048 10.154 7 12.156 7z"></path></g></svg></a></li>
                                             <li class="footer__certificate__folow-item footer__certificate__folow-item-padding "><a href="#" class="footer__certificate__folow-link"><svg version="1.1" viewBox="0 0 24 24" class="svg-icon svg-fill" style="width: 28px; height: 28px;"><g fill="none" fill-rule="evenodd"><circle pid="0" cx="12" cy="12" r="12" fill="#484848"></circle><path pid="1" fill="#FFF" d="M15.429 5.242v2.176h-1.246c-.455 0-.762.098-.921.296-.159.198-.238.495-.238.89v1.558h2.325l-.31 2.44h-2.015v6.255h-2.429v-6.255H8.571v-2.44h2.024V8.365c0-1.022.275-1.814.826-2.377.55-.564 1.283-.845 2.198-.845.778 0 1.381.033 1.81.099z"></path></g></svg></a></li>
@@ -953,12 +1046,18 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="footer__end">
-                <p class="footer__end-coppy-right">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
-                <p class="footer__address">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</p>
-                <p class="footer__certificate">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</p>
+                <div class="footer__end-wrap">
+                    <p class="footer__end-coppy-right">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
+                    <p class="footer__address">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</p>
+                    <p class="footer__certificate">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</p>
+                </div>
             </div>
         </footer>
+     
+    </div>  
     
 </body>
 </html>

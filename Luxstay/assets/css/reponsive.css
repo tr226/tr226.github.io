@@ -1,0 +1,191 @@
+/* mobile & tablet */
+@media (max-width:1023px){
+    .hidden-on-mobile-tablet{
+        display: none;
+    }
+    .no-wrap-tablet{
+        flex-wrap: nowrap;
+    }
+    .header__bar-mobile-tablet{
+        font-size: 2.5rem;
+    }
+   
+    .header-with-search{
+        flex: unset;
+    }
+    .header_wrap{
+        justify-content: space-between;
+    }
+    .header__search{
+        width:320px;
+    }
+  
+    .contact__endow{
+        margin-top:-10px;
+    }
+    
+   
+    .contact__places-img-list,
+    .contact__endow_list,
+    .contact__recommend-list,
+    .contact__discovery-list,
+    .contact__guide-list{
+        overflow: auto;
+    }
+    .contact__places-img-list::-webkit-scrollbar,
+    .contact__endow_list::-webkit-scrollbar,
+    .contact__recommend-list::-webkit-scrollbar,
+    .contact__discovery-list::-webkit-scrollbar,
+    .contact__guide-list::-webkit-scrollbar{
+        display: none;
+    }
+    .contact__connect-info-3app-wrap {
+        top:12px;
+    }
+    .contact__connect-info-chplay-padding {
+        margin-bottom: 51px;
+    }
+    .footer__infomation--more{
+        margin:60px 0;
+        text-align: center;
+    }
+    .footer__pay{
+        margin: 0;
+    }
+    .footer__certificate-wrap {
+        margin: unset;
+    }
+    .nav__input:checked ~ .nav__overlay{
+        display: block;
+    }
+    .nav__input:checked ~ .header__navbar-mobile{
+       transform: translateX(0);
+       opacity: 1;
+    }
+    .header__bar-mobile-tablet{
+        display: block;
+    }
+    .contact_bakground-wapper{
+        height: 200px;
+    }
+
+   
+}
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hidden-on-tablet{
+        display: none;
+    }
+   
+    .header{
+        height:70px;
+    }
+    .header_wrap{
+        padding-top:10px;
+    }
+    .contact_bakground{
+        height: 163px;
+    }
+    .contact__discovery-item{
+        height: 350px;
+    }
+    .contact__discovery-item-img{
+        height:100%;
+    }
+    .contact__discovery_btn {
+        top: 243px;
+        left: -21px;
+    }
+    .contact__guide-item{
+        height: 356px;
+        
+    }
+    .contact__guide-item-img {
+        height:100%;
+    }
+    .contact__guide_btn {
+        width: calc(100% + 29px);
+        top: 222px;
+    }
+  
+    .contact__connect-info-item{
+        height: 59px;
+        width: 189px;
+    }
+    .contact__connect-info-tablet >p{
+        display: block;
+    }
+    .footer__connect-info-3app-wrap {
+        margin-top: -34px;
+    }
+    .footer__connect-info-item {
+        width:100%;
+        padding:29px 0;
+    }
+    .footer__connect-info-item-img {
+        height:46px;
+    }
+ 
+  
+   
+    .footer__pay-list{
+        margin-left:-16px;
+    }
+    .footer__folow-wrap{
+        margin-right:unset
+    }
+
+}
+/* mobile */
+@media (max-width:739px){
+    .hidden-on-mobile{
+        display: none;
+    }
+    .app{
+        margin: 0 16px;
+        ;
+    }
+    .header_wrap{
+        margin:0 16px;
+    }
+    .contact_bakground{
+        height: 86px;
+    }
+    .contact_connect-logo {
+        width: 231px;
+    }
+    .contact__connect-label {
+        font-size: 2rem;
+    }
+    .contact__connect-info-mobile>p{
+        display: block;
+    }
+    .contact__connect-info-mobile{
+        margin-top:20px;
+    }
+    .footer__certificate__folow-wrap{
+        display: block;
+     
+    }
+    .footer__folow-wrap {
+        margin-right: unset;
+    }
+    .footer__pay-list{
+        margin-left:34px;
+    }
+    .footer__certificate__folow-list{
+        margin-left: 80px;
+    }
+    .margin-on-mobile{
+        margin-left:108px;
+    }
+    .header__search{
+        width:260px;
+    }
+    .contact__welcome-label{
+        font-size: 2.6rem;
+    }
+    .contact__places-img-list{
+        top:unset;
+    }
+}

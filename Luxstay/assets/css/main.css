@@ -1,3 +1,6 @@
+.app{
+    overflow:hidden;
+}
 .header{
     height:80px;
     background-color:var(--white-color);
@@ -149,6 +152,104 @@
     font-size: 1.6rem;;
     
 }
+/* navbar__btn */
+.header__navbar-mobile{
+    position:fixed;
+    top:0;
+    left:0;
+    width:300px;
+    background-color: #fff;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-301px);
+    opacity: 0;
+    transition: transfrom ease-out 0.3s, opacity ease-in 0.3s;
+}
+.header__navbar-mobile-list{
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+.header__navbar-mobile-item{
+    font-size: 2rem;;
+    padding:15px 0;
+}
+.header__navbar-mobile-link{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--black-color);
+   
+}
+.header__navbar-mobile-language__link{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--black-color);
+    display: flex;
+}
+.header__navbar-mobile-language{
+    display: flex;
+    width: 257px;
+    height: 51px;
+    background-color:  #f6f6f6; 
+    position: relative;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+    top:4px;
+    left:19px;
+}
+
+
+.header__navbar-mobile-language__flag-out{
+    background-color: #ed3432;
+    width: 26px;
+    height:26px;
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: -6px;
+    margin-right: 4px;
+    
+}
+.header__navbar-mobile-language__star{
+    color: #fdce0c;
+    font-size: 1.4rem;  
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+   
+}
+.header__navbar-mobile-language_down{
+
+    margin: -6px 10px 0 4px;
+}
+.header__navbar-mobile-language-derectional-wrap{
+    margin-left: 18px;
+}
+.header__navbar-mobile-language-derectional{
+    display: flex;
+    align-items: center;
+}
+.header__navbar-mobile-item-notication{
+    height: 6px;
+    width: 7px;
+    background-color: #fb9236;
+    position: absolute;
+    top: 104px;
+    left: calc(20% + 4px);
+    border-radius: 50%;
+}
+.header__navbar-mobile-close{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+/* ----------- */
 
 .header__navbar{
 display: flex;
@@ -174,7 +275,7 @@ height: 47px;
     background-color: #fb9236;
     position: absolute;
     top: 26px;
-    right: calc(26% + 37px);
+    right: calc(26% + 4px);
     border-radius: 50%;
 }
 .header__navbar-item-link{
@@ -378,9 +479,49 @@ border-radius: 3px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
-    animation: fadeIn 1s ease-in-out    ;
+    animation: fadeIn 1s ease-in-out   ;
 
 }
+/* slider run */
+.contact_bakground-wapper{
+    position: relative;
+    height: 400px;;
+}
+.slider{
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.slider-1 {
+    animation-name: chuyen1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes chuyen1{
+    0% { visibility:visible;}
+    33% { visibility:visible;}
+    66% { visibility:hidden;}
+    100% { visibility:hidden;}
+}
+.slider-2 {
+    animation-name: chuyen2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes chuyen2{
+    0% { visibility:hidden;}
+    33% { visibility:hidden;}
+    66% { visibility:visible;}
+    100% { visibility:visible;}
+}
+/* ------------ */
 .contact__welcome-label{
     font-size: 2.8rem;
     margin:54px 0 9px 0;
@@ -409,7 +550,15 @@ color:#333;
 
 .contact__places-img-list{
     position: relative;
-    top: -98px;
+    top: -41px;
+}
+.contact__place-btn {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    left: -25px;
+    top: 126px;
+    width: calc(100% - -54px);
 }
 .contact__places-img-item{
     background-size:cover;
@@ -472,7 +621,7 @@ margin-top:-72px;
 }
 /* recomend */
 .contact__recommend-list{
-    margin-top: -95px;
+    margin-top: 5px;
 }
 .contact__recomend{
    margin-top: 68px;
@@ -508,17 +657,18 @@ margin-top:-72px;
     
 
 }
-/* btn recomend */
-.contact__recomemnd__local-left{
+.contact__recommend_btn{
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 184px;
-    left: -16px;
+    top: 124px;
+    right: 0;
+    left: -17px;
+    width: calc(100% + 32px);
 }
-.contact__recomemnd__local-right{
-    position: relative;
-    top: 122px;
-    right: -1137px;
-}
+
+
+
 /* RECOMMEND DISCOVERY */
 
 .contact__discovery{
@@ -626,7 +776,18 @@ margin-top:-72px;
     line-height: 1.3rem;;
 }
 .contact__connect-info > p{
-    margin: 13px 0;;
+    margin: 13px 0;
+}
+.contact__connect-info-tablet >p{
+    margin: 13px 0;
+    font-size: 1.4rem ;
+    line-height: 1.6rem;
+    display: none;
+}
+.contact__connect-info-mobile>p{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    display: none;
 }
 .contact__connect-info-qr{
     padding-top:0%;
@@ -702,6 +863,10 @@ margin-top:-72px;
     background-repeat: no-repeat;
  
 }
+.footer__connect-info-3app-wrap{
+    margin-top:-2px;
+}
+
 .footer__information-item-wrap{
     margin-top:25px;
 }
@@ -709,7 +874,7 @@ margin-top:-72px;
 .footer__connect-info-item{
     width: 90px;
     height: 28px;
-    padding:10px 0;
+    padding:22px 0;
 }
 .footer__connect-info-item-img{
     padding-left:0%;
@@ -752,6 +917,7 @@ margin-top:-72px;
 .footer__margin-call-info{
     margin-left:23px;
 }
+
 /* infomation more */
 .footer__infomation--more{
     margin:60px;
@@ -803,13 +969,51 @@ padding:3px 20px 0 0 ;
     border-top: 1px solid #9ca3ac;
     position: relative;
     top:-27px;
+}  
+ .footer__end-wrap{
+     height:400px;
+ }
  
-}
+
 .footer__end p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #9ca3ac;
 }
+
+.footer__certificate,
+.footer__address,
 .footer__end-coppy-right{
-    margin-top: 30px;;
+    margin-top: 30px;
+  
 }
+
+/* btn mobile tablet */
+.nav__overlay{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+.nav__input{
+    display: none;
+}
+.header__bar-mobile-tablet{
+    display: none;
+}
+
+
+/* phone-run */
